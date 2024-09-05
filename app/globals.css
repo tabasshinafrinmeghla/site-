@@ -28,6 +28,6 @@
   } */
 
   body{
-    @apply font-primary;
+    @apply font-primary bg-slate-500 text-white leading-loose;
   }
 }
