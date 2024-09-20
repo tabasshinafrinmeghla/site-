@@ -11,7 +11,7 @@ const Header = () => {
 
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Meghla <span className=" text-neutral-700">.</span>
+           Meghla <span className=" text-neutral-700">.</span>
           </h1>
         </Link>
         {/*desktop nav*/}
