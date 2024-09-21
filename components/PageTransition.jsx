@@ -14,9 +14,9 @@ const PageTransition = ({ children }) => {
   <AnimatePresence>
     <div key={pathname}>
       <motion.div initial={{ opacity: 1 }} animate={{
-        opacity: 0, transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
+        opacity: 0, transition: { delay: 1, duration: 0.5, ease: "easeInOut" },
       }}
-        className="h-screen w-screen fixed bg-slate-600 top-8 pointer-events-none"
+        className="h-screen w-screen fixed bg-slate-700 top-0 pointer-events-none"
       >
 
       </motion.div>
