@@ -23,7 +23,9 @@ const Header = () => {
           <Nav></Nav>
 
           <Link href='/contact'>
-            <Button>Hire me</Button>
+            <Button className=" border border-accent  
+            hover:bg-teal-500 hover:text-primary hover:transition-all duration-500"
+            >Hire me</Button>
           </Link>
         </div>
 
