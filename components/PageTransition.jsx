@@ -10,27 +10,35 @@ const PageTransition = ({ children }) => {
 
 
   const pathname = usePathname();
-  return(
-  <AnimatePresence>
-    <div key={pathname}>
-      <motion.div initial={{ opacity: 1 }} animate={{
-        opacity: 0, transition: { delay: 1, duration: 0.5, ease: "easeInOut" },
-      }}
-        className="h-screen w-screen fixed bg-slate-700 top-0 pointer-events-none"
-      >
+  return (
+    <AnimatePresence>
+      <div key={pathname}>
+        <motion.div
+          initial={{ opacity: 1 }}
+          animate={{
+            opacity: 0,
+            transition: {
+              delay: 1, duration: 0.5,
+              ease: "easeInOut"
+            }
 
-      </motion.div>
+          }}
+
+          className="h-screen w-screen fixed bg-slate-700 top-0 pointer-events-none"
+        >
+
+        </motion.div>
 
 
-    </div>
+      </div>
 
-    { children }
+      {children}
 
-  </AnimatePresence>
+    </AnimatePresence>
 
- 
 
-    );
+
+  );
 
 };
 
